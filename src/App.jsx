@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 const RACES = [
   {
@@ -589,6 +590,7 @@ export default function App() {
       <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, background: `linear-gradient(transparent, ${t.bg} 50%)`, padding: "20px 16px 10px", textAlign: "center", pointerEvents: "none" }}>
         <div style={{ fontSize: 9.5, color: t.textMuted, pointerEvents: "auto" }}>Salta Corre 2026 · Verificá siempre en los sitios oficiales</div>
       </div>
+      <Analytics />
     </div>
   );
 }

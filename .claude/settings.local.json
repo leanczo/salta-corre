@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npm run build:*)",
-      "Bash(del:*)"
+      "Bash(del:*)",
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(npm install:*)"
     ]
   }
 }
